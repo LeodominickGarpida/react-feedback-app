@@ -1,11 +1,12 @@
 function Card({ children, reverse }) {
+  Card.defaultProps = {
+    reverse: false,
+  }
+  
   return (
     <div className={`card ${reverse && 'reverse'}`}>{children}</div>
   )
   
-  // Card.defaultProps = {
-  //   reverse: false,
-  // }
 }
 
 export default Card
